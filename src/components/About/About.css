@@ -35,3 +35,9 @@
     margin-top: 2em;
   }
 }
+
+.profile {
+  border-radius: 50%;
+  width: 20em;
+  height: auto;
+}

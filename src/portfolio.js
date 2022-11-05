@@ -6,43 +6,52 @@ const header = {
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Fe',
+  role: 'Front-end Developer & UI/UX Designer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'I can design and build fully responsive web pages using React, Next.js, Javascript, HTML, CSS, and more.',
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/fe-rosette-macaraeg-108597162/',
+    github: 'https://github.com/femacaraeg',
   },
+}
+
+const moreAbout = {
+  description1:
+    'I love exploring new things and continuously improving my skills. I am independent but also like to work with people. Most recently, I’ve been building web apps with React and exploring Next.js.',
+  description2:
+    'I have experience closely working with different teams from Australia, the United States, and New Zealand.',
+  description3:
+    'In my free time you can find me at the gym, coffee shops or at the bar playing Trivia Nights with friends. ',
 }
 
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Online Sabong',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+      'An end-to-end online gaming platform that caters to all of the operational needs of an online operator, agent, and its players. Its aim is to elevate the user experience compared to existing systems, as well as provide improved reliability, security, and analytics capabilities.',
+    stack: ['React', 'TypeScript', 'Material UI', 'Nx'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 2',
+    name: 'Camp Bernardino de Lavigan',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A landing page that showcases Camp Bernardino de Lavigan, a beach resort in Governor Generoso, Davao Oriental that offers water activities, dining, wellness services, and a glamping experience.',
+    stack: ['Figma', 'Squarespace'],
+    // sourceCode: 'https://github.com',
+    livePreview: 'https://campbernardino.com',
   },
   {
-    name: 'Project 3',
+    name: 'Buylocal',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'An e-commerce website and platform to help small businesses go online and showcase their products.',
+    stack: ['HTML', 'CSS', 'JQuery'],
+    // sourceCode: 'https://github.com',
+    livePreview: 'https://buylocal.com',
   },
 ]
 
@@ -55,17 +64,20 @@ const skills = [
   'TypeScript',
   'React',
   'Redux',
-  'SASS',
+  'Next.js',
   'Material UI',
   'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
+  'CSS Modules',
+  'Tailwind',
+  'Figma',
+  'Adobe XD',
+  'Github',
+  'JIRA',
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'femacaraeg@mail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, skills, contact, moreAbout }
