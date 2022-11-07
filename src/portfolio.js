@@ -10,7 +10,7 @@ const about = {
   role: 'Front-end Developer & UI/UX Designer',
   description:
     'I can design and build fully responsive web pages using React, Next.js, Javascript, HTML, CSS, and more.',
-  resume: 'https://example.com',
+  resume: 'static/macaraeg_cv.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/fe-rosette-macaraeg-108597162/',
     github: 'https://github.com/femacaraeg',
