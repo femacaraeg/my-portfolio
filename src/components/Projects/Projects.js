@@ -1,21 +1,49 @@
+import { useState } from 'react'
 import uniqid from 'uniqid'
 import { projects } from '../../portfolio'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
+import ProjectDialog from '../ProjectDialog/ProjectDialog'
 import './Projects.css'
 
 const Projects = () => {
   if (!projects.length) return null
 
-  return (
-    <section id='projects' className='section projects'>
-      <h2 className='section__title'>Projects</h2>
+  const [open, setOpen] = useState(false)
+  const [selectedProject, setSelectedProject] = useState({})
 
-      <div className='projects__grid'>
-        {projects.map((project) => (
-          <ProjectContainer key={uniqid()} project={project} />
-        ))}
-      </div>
-    </section>
+  const handleCard = (id) => {
+    console.log(id)
+    setSelectedProject(projects.find((x) => x.id === id))
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+    setSelectedProject({})
+  }
+
+  console.log(selectedProject, open)
+  return (
+    <>
+      <section id='projects' className='section projects'>
+        <h2 className='section__title'>Projects</h2>
+
+        <div className='projects__grid'>
+          {projects.map((project) => (
+            <ProjectContainer
+              key={uniqid()}
+              project={project}
+              handleCard={() => handleCard(project.id)}
+            />
+          ))}
+        </div>
+      </section>
+      <ProjectDialog
+        isOpen={open}
+        handleClose={handleClose}
+        project={selectedProject}
+      />
+    </>
   )
 }
 

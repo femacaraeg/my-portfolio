@@ -30,6 +30,16 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
+    id: 1,
+    name: 'Coffee Stores',
+    description:
+      'A personal project that can be used to search and upvote nearby coffee stores. This app uses Unsplash API for loading coffee store images and Airtable for storing data.',
+    stack: ['Next.js', 'Javascript', 'CSS Modules'],
+    sourceCode: 'https://github.com/femacaraeg/discover-coffee',
+    livePreview: 'https://discover-coffee-livid.vercel.app/',
+  },
+  {
+    id: 2,
     name: 'Online Sabong',
     description:
       'An end-to-end online gaming platform that caters to all of the operational needs of an online operator, agent, and its players. Its aim is to elevate the user experience compared to existing systems, as well as provide improved reliability, security, and analytics capabilities.',
@@ -38,6 +48,7 @@ const projects = [
     livePreview: 'https://github.com',
   },
   {
+    id: 3,
     name: 'Camp Bernardino de Lavigan',
     description:
       'A landing page that showcases Camp Bernardino de Lavigan, a beach resort in Governor Generoso, Davao Oriental that offers water activities, dining, wellness services, and a glamping experience.',
@@ -46,6 +57,7 @@ const projects = [
     livePreview: 'https://campbernardino.com',
   },
   {
+    id: 4,
     name: 'Buylocal',
     description:
       'An e-commerce website and platform to help small businesses go online and showcase their products.',
