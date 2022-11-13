@@ -1,0 +1,10 @@
+.project_dialog__title {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.project_dialog__closeButton {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
