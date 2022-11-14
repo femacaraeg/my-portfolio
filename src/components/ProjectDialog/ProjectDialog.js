@@ -9,6 +9,9 @@ import {
 } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
 import CloseIcon from '@material-ui/icons/Close'
+import coffeeCover from '../../static/coffee_connoisseur.png'
+
+import './ProjectDialog.css'
 
 const styles = (theme) => ({
   root: {
@@ -29,8 +32,15 @@ const styles = (theme) => ({
 const BootstrapDialogTitle = withStyles(styles)((props) => {
   const { children, classes, onClose, ...other } = props
   return (
-    <DialogTitle disableTypography id='dialog-title' className={classes.root}>
-      {children}
+    <DialogTitle
+      disableTypography
+      id='dialog-title'
+      className={classes.root}
+      // {...other}
+    >
+      <Typography variant='h5' className={classes.title}>
+        {children}
+      </Typography>
       <IconButton
         aria-label='close'
         className={classes.closeButton}
@@ -59,12 +69,20 @@ const ProjectDialog = (props) => {
         open={isOpen}
         onClose={handleClose}
         aria-labelledby='dialog-with-title'
+        className='project_dialog__root'
       >
         <BootstrapDialogTitle onClose={handleClose}>
-          <h3>{project.name}</h3>
+          {project.name}
         </BootstrapDialogTitle>
         <DialogContent>
-          <Typography>{project.description}</Typography>
+          <Typography className='project_dialog__description'>
+            {project.description}
+          </Typography>
+          <img
+            src={coffeeCover}
+            alt='coffee connoisseur'
+            className='project_dialog__image'
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Close</Button>
