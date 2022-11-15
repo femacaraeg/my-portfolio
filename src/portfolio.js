@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://femacaraeg.github.io/my-portfolio',
-  title: 'FE.',
+  title: 'FM',
 }
 
 const about = {
@@ -31,7 +31,7 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     id: 1,
-    name: 'Coffee Stores',
+    name: 'Coffee Shop Explorer',
     description:
       'A personal project that can be used to search and upvote nearby coffee stores. This app uses Unsplash API for loading coffee store images and Airtable for storing data.',
     stack: ['Next.js', 'Javascript', 'CSS Modules'],
@@ -64,6 +64,27 @@ const projects = [
     stack: ['HTML', 'CSS', 'JQuery'],
     // sourceCode: 'https://github.com',
     livePreview: 'https://buylocal.com',
+  },
+  {
+    id: 5,
+    name: 'Harmonate',
+    description:
+      ' A data operations technology with machine learning capability for funds and fund administrators. Its aim is to properly manage data and gain powerful insights that is highly traceable.',
+    stack: [
+      'ReactJS',
+      'CSS Modules',
+      'Storybook',
+      'Material UI',
+      'Webpack',
+      'msw',
+    ],
+    responsibilities: [
+      'Developed features for Harmonate by using React and Material UI',
+      'Create reusable components that are shared between different applications',
+      'Ensure maintainability by fixing bugs, refactoring, and documenting components with Storybook',
+      'Collaborated with other team members such as product owner and designer to ensure usability of features',
+      'Implement mocking of server in preparation for the integration of backend to frontend using msw',
+    ],
   },
 ]
 

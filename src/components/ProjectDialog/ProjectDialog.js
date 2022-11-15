@@ -13,6 +13,7 @@ import coffeeCover from '../../static/coffee_connoisseur.png'
 
 import './ProjectDialog.css'
 
+// Custom Dialog Title
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -26,6 +27,8 @@ const styles = (theme) => ({
   },
   title: {
     fontWeight: '700',
+    fontFamily: 'Poppins',
+    color: '#444',
   },
 })
 
@@ -36,11 +39,10 @@ const BootstrapDialogTitle = withStyles(styles)((props) => {
       disableTypography
       id='dialog-title'
       className={classes.root}
-      // {...other}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...other}
     >
-      <Typography variant='h5' className={classes.title}>
-        {children}
-      </Typography>
+      <h3 className={classes.title}>{children}</h3>
       <IconButton
         aria-label='close'
         className={classes.closeButton}
@@ -55,6 +57,7 @@ const BootstrapDialogTitle = withStyles(styles)((props) => {
 const BootstrapDialogContent = withStyles((theme) => ({
   root: {
     padding: theme.spacing(2),
+    fontFamily: 'Poppins',
   },
 }))(DialogContent)
 
@@ -62,33 +65,47 @@ const ProjectDialog = (props) => {
   const { isOpen, handleClose, project } = props
 
   return (
-    <>
-      <Dialog
-        fullWidth
-        maxWidth='md'
-        open={isOpen}
-        onClose={handleClose}
-        aria-labelledby='dialog-with-title'
-        className='project_dialog__root'
-      >
-        <BootstrapDialogTitle onClose={handleClose}>
-          {project.name}
-        </BootstrapDialogTitle>
-        <DialogContent>
-          <Typography className='project_dialog__description'>
-            {project.description}
+    <Dialog
+      fullWidth
+      maxWidth='md'
+      open={isOpen}
+      onClose={handleClose}
+      aria-labelledby='dialog-with-title'
+      className='project_dialog__root'
+    >
+      <BootstrapDialogTitle onClose={handleClose}>
+        {project.name}
+      </BootstrapDialogTitle>
+      <BootstrapDialogContent>
+        <Typography className='project_dialog__description'>
+          {project.description}
+        </Typography>
+        <img
+          src={coffeeCover}
+          alt='coffee connoisseur'
+          className='project_dialog__image'
+          loading='lazy'
+        />
+        <div>
+          <Typography variant='h6' className='project_dialog__heading'>
+            What I did:
           </Typography>
-          <img
-            src={coffeeCover}
-            alt='coffee connoisseur'
-            className='project_dialog__image'
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
-    </>
+          <ul className='project_dialog__contribution_list'>
+            {project.responsibilities?.map((task, index) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <li key={`list-${index}`}>
+                <Typography className='project_dialog__contribution_list_item'>
+                  {task}
+                </Typography>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </BootstrapDialogContent>
+      <DialogActions>
+        <Button onClick={handleClose}>Close</Button>
+      </DialogActions>
+    </Dialog>
   )
 }
 

@@ -9,6 +9,14 @@
   top: 1rem;
 }
 
+.project_dialog__description,
+.project_dialog__heading,
+.project_dialog__root,
+.project_dialog__contribution_list_item {
+  color: #444;
+  font-family: 'Poppins' !important;
+}
+
 .project_dialog__description {
   margin-bottom: 1rem !important;
 }
@@ -20,6 +28,7 @@
   margin: 0;
 }
 
-.project_dialog__root {
-  background-color: inherit;
+.project_dialog__contribution_list {
+  list-style-type: circle;
+  margin-left: 1rem;
 }
