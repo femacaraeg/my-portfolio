@@ -33,22 +33,43 @@ const projects = [
     id: 1,
     name: 'Coffee Shop Explorer',
     description:
-      'A personal project that can be used to search and upvote nearby coffee stores. This app uses Unsplash API for loading coffee store images and Airtable for storing data.',
+      'A personal project that can be used to search and upvote nearby coffee stores. This application uses Unsplash API for loading coffee store images and Airtable for storing data.',
     stack: ['Next.js', 'Javascript', 'CSS Modules'],
     sourceCode: 'https://github.com/femacaraeg/discover-coffee',
     livePreview: 'https://discover-coffee-livid.vercel.app/',
+    responsibilities: [
+      'Build a responsive application using Next.js framework',
+      'Use serverless function',
+      'Create and build upvoting feature',
+    ],
+    mockup: '/static/coffee_connoisseur.png',
   },
   {
     id: 2,
     name: 'Online Sabong',
     description:
-      'An end-to-end online gaming platform that caters to all of the operational needs of an online operator, agent, and its players. Its aim is to elevate the user experience compared to existing systems, as well as provide improved reliability, security, and analytics capabilities.',
+      'An end-to-end online gaming platform that caters to all of the operational needs of an online operator, agent, and its players. It aims to elevate the user experience as well as provide improved reliability, security, and analytics capabilities.',
     stack: ['React', 'TypeScript', 'Material UI', 'Nx'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    // sourceCode: 'https://github.com',
+    // livePreview: 'https://github.com',
+    responsibilities: ['Build mockups and present to product owners.'],
   },
   {
     id: 3,
+    name: 'Safe Davao QR',
+    description:
+      'A COVID-19 management system which aims to help the local government in managing the spread of COVID-19 and to keep individuals safe and healthy.',
+    stack: ['ReactJS', 'Tailwind', 'Material UI', 'Figma'],
+    // sourceCode: 'https://github.com',
+    livePreview: 'https://profiles.safe-davao.com/',
+    responsibilities: [
+      'UI/UX Designer and Frontend developer',
+      'Coordinated with clients for project specifications',
+      'Create mockups and branding',
+    ],
+  },
+  {
+    id: 4,
     name: 'Camp Bernardino de Lavigan',
     description:
       'A landing page that showcases Camp Bernardino de Lavigan, a beach resort in Governor Generoso, Davao Oriental that offers water activities, dining, wellness services, and a glamping experience.',
@@ -57,16 +78,21 @@ const projects = [
     livePreview: 'https://campbernardino.com',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Buylocal',
     description:
       'An e-commerce website and platform to help small businesses go online and showcase their products.',
     stack: ['HTML', 'CSS', 'JQuery'],
     // sourceCode: 'https://github.com',
-    livePreview: 'https://buylocal.com',
+    livePreview: 'https://buylocal.ph',
+    responsibilities: [
+      'Implemented the website from concept through deployment',
+      'Standardized out with a responsive, mobile-first approach and strategy',
+      'Collaborated with designers and other product team members',
+    ],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Harmonate',
     description:
       ' A data operations technology with machine learning capability for funds and fund administrators. Its aim is to properly manage data and gain powerful insights that is highly traceable.',

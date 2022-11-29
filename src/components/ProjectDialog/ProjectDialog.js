@@ -81,7 +81,7 @@ const ProjectDialog = (props) => {
           {project.description}
         </Typography>
         <img
-          src={coffeeCover}
+          src={project.mockup || coffeeCover}
           alt='coffee connoisseur'
           className='project_dialog__image'
           loading='lazy'
