@@ -5,6 +5,7 @@
   background-color: var(--clr-bg);
 }
 
+:root,
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;

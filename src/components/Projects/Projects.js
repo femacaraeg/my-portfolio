@@ -12,7 +12,6 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState({})
 
   const handleCard = (id) => {
-    console.log(id)
     setSelectedProject(projects.find((x) => x.id === id))
     setOpen(true)
   }
@@ -22,7 +21,6 @@ const Projects = () => {
     setSelectedProject({})
   }
 
-  console.log(selectedProject, open)
   return (
     <>
       <section id='projects' className='section projects'>

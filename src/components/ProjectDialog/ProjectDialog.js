@@ -18,6 +18,7 @@ const styles = (theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(2),
+    paddingBottom: 0,
   },
   closeButton: {
     position: 'absolute',
@@ -42,7 +43,7 @@ const BootstrapDialogTitle = withStyles(styles)((props) => {
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...other}
     >
-      <h3 className={classes.title}>{children}</h3>
+      <h2 className={classes.title}>{children}</h2>
       <IconButton
         aria-label='close'
         className={classes.closeButton}
@@ -76,16 +77,26 @@ const ProjectDialog = (props) => {
       <BootstrapDialogTitle onClose={handleClose}>
         {project.name}
       </BootstrapDialogTitle>
+      <div className='project_dialog__tech'>
+        {project.stack?.map((tech, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <p key={index}>#{tech}</p>
+        ))}
+      </div>
+
       <BootstrapDialogContent>
         <Typography className='project_dialog__description'>
           {project.description}
         </Typography>
-        <img
-          src={project.mockup || coffeeCover}
-          alt='coffee connoisseur'
-          className='project_dialog__image'
-          loading='lazy'
-        />
+        <div className='project_dialog__image_container'>
+          <img
+            src={project.mockup || coffeeCover}
+            alt='coffee connoisseur'
+            className='project_dialog__image'
+            loading='lazy'
+          />
+        </div>
+
         <div>
           <Typography variant='h6' className='project_dialog__heading'>
             What I did:

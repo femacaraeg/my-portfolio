@@ -1,3 +1,10 @@
+import coffeeConnoisseurMockup from './static/coffee_connoisseur.png'
+import onlineSabongMockup from './static/online_sabong.png'
+import safeDavao from './static/safedavao.png'
+import campbernardino from './static/campbernardino.png'
+import buylocal from './static/buylocal.png'
+import harmonate from './static/harmonate.png'
+
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://femacaraeg.github.io/my-portfolio',
@@ -42,7 +49,7 @@ const projects = [
       'Use serverless function',
       'Create and build upvoting feature',
     ],
-    mockup: '/static/coffee_connoisseur.png',
+    mockup: coffeeConnoisseurMockup,
   },
   {
     id: 2,
@@ -50,9 +57,12 @@ const projects = [
     description:
       'An end-to-end online gaming platform that caters to all of the operational needs of an online operator, agent, and its players. It aims to elevate the user experience as well as provide improved reliability, security, and analytics capabilities.',
     stack: ['React', 'TypeScript', 'Material UI', 'Nx'],
-    // sourceCode: 'https://github.com',
-    // livePreview: 'https://github.com',
-    responsibilities: ['Build mockups and present to product owners.'],
+    responsibilities: [
+      'Designed and built mockups to present to product owners.',
+      'One of the two Frontend Developers converting design to code.',
+      "Built the front-end of the application's admin and fight controller modules.",
+    ],
+    mockup: onlineSabongMockup,
   },
   {
     id: 3,
@@ -60,13 +70,13 @@ const projects = [
     description:
       'A COVID-19 management system which aims to help the local government in managing the spread of COVID-19 and to keep individuals safe and healthy.',
     stack: ['ReactJS', 'Tailwind', 'Material UI', 'Figma'],
-    // sourceCode: 'https://github.com',
     livePreview: 'https://profiles.safe-davao.com/',
     responsibilities: [
       'UI/UX Designer and Frontend developer',
       'Coordinated with clients for project specifications',
       'Create mockups and branding',
     ],
+    mockup: safeDavao,
   },
   {
     id: 4,
@@ -74,8 +84,13 @@ const projects = [
     description:
       'A landing page that showcases Camp Bernardino de Lavigan, a beach resort in Governor Generoso, Davao Oriental that offers water activities, dining, wellness services, and a glamping experience.',
     stack: ['Figma', 'Squarespace'],
-    // sourceCode: 'https://github.com',
     livePreview: 'https://campbernardino.com',
+    responsibilities: [
+      'Designed the landing pages using Figma.',
+      'Built website using Squarespace',
+      'Integrate messenger chat support.',
+    ],
+    mockup: campbernardino,
   },
   {
     id: 5,
@@ -83,13 +98,13 @@ const projects = [
     description:
       'An e-commerce website and platform to help small businesses go online and showcase their products.',
     stack: ['HTML', 'CSS', 'JQuery'],
-    // sourceCode: 'https://github.com',
     livePreview: 'https://buylocal.ph',
     responsibilities: [
       'Implemented the website from concept through deployment',
       'Standardized out with a responsive, mobile-first approach and strategy',
       'Collaborated with designers and other product team members',
     ],
+    mockup: buylocal,
   },
   {
     id: 6,
@@ -111,6 +126,7 @@ const projects = [
       'Collaborated with other team members such as product owner and designer to ensure usability of features',
       'Implement mocking of server in preparation for the integration of backend to frontend using msw',
     ],
+    mockup: harmonate,
   },
 ]
 
