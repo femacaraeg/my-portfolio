@@ -28,7 +28,7 @@ const moreAbout = {
   description1:
     'I love exploring new things and continuously improving my skills. I am independent but also like to work with people. Most recently, I’ve been building web apps with React and exploring Next.js.',
   description2:
-    'I have experience closely working with different teams from Australia, the United States, and New Zealand.',
+    'I have experience closely working with different teams from the United States, and New Zealand.',
   description3:
     'In my free time you can find me at the gym, coffee shops or at the bar playing Trivia Nights with friends. ',
 }
